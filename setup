@@ -1,0 +1,8 @@
+#! /bin/bash
+echo Compiling lex.yy.c...
+g++ lex.yy.c -lfl -o msentcount
+echo Moving to /usr/bin... 
+
+if [[ $? -eq 0 ]]; then
+sudo mv msentcount /usr/bin
+fi
